@@ -37,7 +37,7 @@
       </ul>
     </td>
     <td width="50%">
-      <img src="C:/Users/thaku/.gemini/antigravity/brain/ec4b6453-780a-4a75-ba78-b99263f4a453/initial_bookshelf_view_1776970625415.png" width="100%" style="border-radius: 10px;" />
+      <img src="https://skiper-ui.com/images/lummi/img17.png" width="100%" style="border-radius: 10px;" />
     </td>
   </tr>
 </table>
