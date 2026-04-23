@@ -47,7 +47,7 @@
 <table width="100%">
   <tr>
     <td width="50%">
-       <img src="C:/Users/thaku/.gemini/antigravity/brain/ec4b6453-780a-4a75-ba78-b99263f4a453/hover_lotr_expanded_1776970653372.png" width="100%" style="border-radius: 10px;" />
+       <img src="https://skiper-ui.com/images/lummi/img12.png" width="100%" style="border-radius: 10px;" />
     </td>
     <td width="50%">
       <h3>🎡 Smart Scrolling</h3>
