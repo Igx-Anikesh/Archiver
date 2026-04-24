@@ -24,7 +24,7 @@ const BOOK_TITLES = [
   "Nova Brand Studio"
 ];
 
-const BOOKS = BOOK_TITLES.map((title, index) => ({
+export const BOOKS = BOOK_TITLES.map((title, index) => ({
   id: `book-${index}`,
   title,
   year: `202${Math.floor(index / 5)}—202${Math.floor(index / 5) + 1}`,
@@ -41,7 +41,13 @@ BOOKS[14].image = "https://images.unsplash.com/photo-1534528741775-53994a69daeb?
 // Sort books alphabetically by title as requested
 BOOKS.sort((a, b) => a.title.localeCompare(b.title));
 
-export default function Bookshelf() {
+export type Book = typeof BOOKS[0];
+
+interface BookshelfProps {
+  onSelectBook?: (bookId: string) => void;
+}
+
+export default function Bookshelf({ onSelectBook }: BookshelfProps) {
   const [hoveredIndex, setHoveredIndex] = useState<number | null>(14); // Default to Quantum Visual Arts expanded
   const scrollContainerRef = useRef<HTMLDivElement>(null);
 
@@ -78,6 +84,7 @@ export default function Bookshelf() {
               <motion.div
                 key={book.id}
                 onHoverStart={() => setHoveredIndex(index)}
+                onClick={() => onSelectBook?.(book.id)}
                 layout
                 initial={false}
                 animate={{
